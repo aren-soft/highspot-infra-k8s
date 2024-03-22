@@ -1,0 +1,19 @@
+steps:
+  - label: "Setup Terraform"
+    commands:
+      - sudo apt-get update && sudo apt-get install -y terraform
+    
+  - label: "Init"
+    commands:
+      - cd /test
+      - terraform init
+
+  - label: "Plan"
+    commands:
+      - cd /test
+      - terraform plan
+
+  - label: "Apply"
+    commands:
+      - cd /test
+      - terraform apply
